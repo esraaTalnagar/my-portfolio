@@ -11,7 +11,9 @@ const App = () => {
   return (
     <div>
       <Navbar />
+      <div id="cover">
       <Cover />
+      </div>
       <div id="about-me">
         <AboutMe />
       </div>

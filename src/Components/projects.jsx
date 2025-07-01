@@ -2,12 +2,11 @@ import FirstProj from '../assets/1.jpg'
 import SecondProj from '../assets/2.jpg'
 import ThirdProj from '../assets/3.jpg'
 import FourthProj from '../assets/4.jpg'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 const Projects = () => {
   return (
-    <div className="my-10">
+    <div className="py-10 bg-[#f1e6e3] shadow-inner shadow-slate-300">
       <h2 class="text-5xl font-bold text-[#9F6A69] mb-4 font-serif p-6 text-center">
         Projects
       </h2>
@@ -35,6 +34,7 @@ const Projects = () => {
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,8 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href="https://github.com/esraaTalnagar/WeatherApp"
+                  href="https://esraatalnagar.github.io/WeatherApp/"
+                  target="_blank"
                   className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
@@ -92,6 +93,7 @@ const Projects = () => {
                 <a
                   href="https://github.com/esraaTalnagar/CURD"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -110,6 +112,7 @@ const Projects = () => {
                 <a
                   href="https://esraatalnagar.github.io/CURD/"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -146,8 +149,9 @@ const Projects = () => {
               </p>
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
-                  href="https://github.com/esraaTalnagar/WeatherApp"
+                  href="https://github.com/esraaTalnagar/Bakery"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -164,8 +168,9 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href="https://github.com/esraaTalnagar/WeatherApp"
+                  href="https://esraatalnagar.github.io/Bakery/"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,8 +207,9 @@ const Projects = () => {
               </p>
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
-                  href="https://github.com/esraaTalnagar/WeatherApp"
+                  href="https://github.com/esraaTalnagar/ClothesStore"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -220,8 +226,9 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href="https://github.com/esraaTalnagar/WeatherApp"
+                  href="https://esraatalnagar.github.io/ClothesStore/"
                   className="text-grey-700 hover:text-[#9F6A69]"
+                  target='_blank'
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

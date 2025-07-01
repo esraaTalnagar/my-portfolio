@@ -7,7 +7,9 @@ const Navbar = () => {
     <div className="container mx-auto px-4">
       <div className="flex items-center justify-between py-4">
         <div>
+          <a href="#cover">
           <img src={Logo} className="size-12"/>
+          </a>
         </div>
         <div className="hidden sm:flex sm:items-center">
           <a href="#about-me" className="text-gray-800 text-lg font-semibold hover:text-[#9F6A69] mr-10">About Me</a>

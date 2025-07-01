@@ -2,7 +2,7 @@
 import { TypeAnimation } from "react-type-animation";
 const Education = () => {
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen container">
+    <div className="flex flex-col justify-center items-center min-h-screen  bg-[#f1e6e3] shadow-inner shadow-slate-300">
       <h2 className="text-5xl font-bold text-[#9F6A69] mb-4 font-serif p-6">
         Education
       </h2>
@@ -12,7 +12,7 @@ const Education = () => {
             sequence={[
               "Bachelor’s Degree in Mechatronics Engineering",
               1500,
-              "", 
+              "",
               1000,
               "Bachelor’s Degree in Mechatronics Engineering",
             ]}
