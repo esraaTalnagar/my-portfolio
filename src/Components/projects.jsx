@@ -7,11 +7,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Projects = () => {
   return (
-    <div className='my-10'>
-      <h2 class="text-5xl font-bold text-[#9F6A69] mb-4 font-serif p-6 text-center">Projects</h2>
+    <div className="my-10">
+      <h2 class="text-5xl font-bold text-[#9F6A69] mb-4 font-serif p-6 text-center">
+        Projects
+      </h2>
       <div class="flex justify-center items-center min-h-screen">
         <div class="container mx-auto flex gap-3 ">
-          <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+          <div class="hover:scale-105 transition-transform relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <div class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
               <img src={FirstProj} alt="ui/ux review check" />
               <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -32,7 +34,7 @@ const Projects = () => {
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +52,7 @@ const Projects = () => {
 
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +70,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+          <div class="hover:scale-105 transition-transform relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <div class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
               <img src={SecondProj} alt="ui/ux review check" />
               <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -89,7 +91,7 @@ const Projects = () => {
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
                   href="https://github.com/esraaTalnagar/CURD"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -107,7 +109,7 @@ const Projects = () => {
 
                 <a
                   href="https://esraatalnagar.github.io/CURD/"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,8 +127,8 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
-            <div class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
+          <div class="hover:scale-105 transition-transform relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+            <div class=" relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
               <img src={ThirdProj} alt="ui/ux review check" />
               <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
             </div>
@@ -145,7 +147,7 @@ const Projects = () => {
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +165,7 @@ const Projects = () => {
 
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -181,7 +183,7 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          <div class="relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
+          <div class="hover:scale-105 transition-transform relative flex w-full max-w-[26rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <div class="relative mx-4 mt-4 overflow-hidden text-white shadow-lg rounded-xl bg-blue-gray-500 bg-clip-border shadow-blue-gray-500/40">
               <img src={FourthProj} alt="ui/ux review check" />
               <div class="absolute inset-0 w-full h-full to-bg-black-10 bg-gradient-to-tr from-transparent via-transparent to-black/60"></div>
@@ -201,7 +203,7 @@ const Projects = () => {
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -219,7 +221,7 @@ const Projects = () => {
 
                 <a
                   href="https://github.com/esraaTalnagar/WeatherApp"
-                  className="text-grey-700 hover:text-grey-900"
+                  className="text-grey-700 hover:text-[#9F6A69]"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

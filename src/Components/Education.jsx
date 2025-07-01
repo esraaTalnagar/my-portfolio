@@ -1,5 +1,5 @@
 
-
+import { TypeAnimation } from "react-type-animation";
 const Education = () => {
   return (
     <div className="flex flex-col justify-center items-center min-h-screen container">
@@ -8,9 +8,21 @@ const Education = () => {
       </h2>
       <div className="content  font-serif">
         <div className="header text-center">
-          <h3 className="title text-[#5f403f] text-2xl font-bold">
-            Bachelor’s Degree in Mechatronics Engineering
-          </h3>
+          <TypeAnimation
+            sequence={[
+              "Bachelor’s Degree in Mechatronics Engineering",
+              1500,
+              "", 
+              1000,
+              "Bachelor’s Degree in Mechatronics Engineering",
+            ]}
+            wrapper="h3"
+            repeat={Infinity}
+            deletionSpeed={50}
+            className="title text-[#5f403f] text-2xl font-bold"
+            cursor={true}
+            speed={50}
+          />
           <p className="font-bold text-[#d69693] text-xl m-7">
             Mansoura University, Egypt
           </p>
