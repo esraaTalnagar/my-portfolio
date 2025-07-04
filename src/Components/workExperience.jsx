@@ -1,193 +1,136 @@
+import { useEffect, useState } from "react";
 import { CheckCircleIcon } from "@heroicons/react/24/solid";
+
 const WorkExperience = () => {
+  const [activeSlide, setActiveSlide] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prev) => (prev === 2 ? 1 : prev + 1));
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="min-h-screen container m-10">
-      <div className="header">
-        <h2 className="text-5xl font-bold text-[#9F6A69] mb-10 font-serif text-center ">
-          Work Experience
-        </h2>
-      </div>
-      <div className="flex font-serif flex-col text-start">
-        <div className="exp1 flex flex-row">
-          <div className="head w-[33%]">
-            <h3 className="font-bold text-xl">
-              Front-End Developer (Freelance / Personal Projects)
-            </h3>
-            <p>
-              Remote,{" "}
-              <span className="text-[#9F6A69] italic "> 2024 - Present </span>
-            </p>
-          </div>
-          <div className="role w-[66%]">
-            <ul>
-              <li className="mb-2 flex flex-row ">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Developed multiple responsive and interactive web applications
-                using React, TypeScript, Tailwind CSS, and JavaScript ES6+.
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Built a CRUD system for managing users and data, implementing
-                form validation, modal control, and clean UI components.
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Designed and coded a weather app that consumes real-time APIs,
-                handling asynchronous data fetching and dynamic rendering.
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Created a full E-commerce website with product listings,
-                filtering, search functionality, and cart logic,all crafted from
-                scratch. Focused on
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                performance, accessibility, and code reusability while ensuring
-                cross-browser compatibility.
-              </li>
-            </ul>
+    <section className="container mx-auto px-4 py-10">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#9F6A69] mb-10 font-serif text-center">
+        Work Experience
+      </h2>
+
+      <div className="relative w-full h-auto min-h-[450px] rounded-3xl">
+        {/* Controlled Radio Buttons */}
+        <input
+          type="radio"
+          name="slider"
+          id="slider1"
+          className="hidden peer/slider1"
+          checked={activeSlide === 1}
+          readOnly
+        />
+        <input
+          type="radio"
+          name="slider"
+          id="slider2"
+          className="hidden peer/slider2"
+          checked={activeSlide === 2}
+          readOnly
+        />
+
+        {/* Slide 1 */}
+        <div
+          className="rounded-3xl absolute inset-0 opacity-0 z-10 bg-[#f1e6e3] px-6 py-8 transition-all duration-500
+          peer-checked/slider1:opacity-100 peer-checked/slider1:z-20"
+        >
+          <div className="flex flex-col md:flex-row gap-6 flex-wrap">
+            <div className="w-2/3 md:w-1/3">
+              <h3 className="font-bold text-lg md:text-xl">
+                Front-End Developer (Freelance / Personal Projects)
+              </h3>
+              <p className="text-sm md:text-base">
+                Remote,{" "}
+                <span className="text-[#9F6A69] italic">2024 - Present</span>
+              </p>
+            </div>
+            <div className="w-full md:w-2/3">
+              <ul>
+                {[
+                  "Developed responsive and interactive apps using React, TypeScript, Tailwind CSS, and JS ES6+.",
+                  "Built a CRUD system with validation, modals, and clean components.",
+                  "Created a weather app using real-time APIs and async handling.",
+                  "Developed a complete e-commerce site with cart, filter, and search.",
+                  "Focused on performance, accessibility, and reusable code.",
+                ].map((item, i) => (
+                  <li key={i} className="mb-2 flex text-sm md:text-base">
+                    <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
-        <hr className="my-10 shadow" />
-        <div className="exp2 flex flex-row mt-8">
-          <div className="head w-[33%]">
-            <h3 className="font-bold text-xl">
-              Programming Instructor (Be School)
-            </h3>
-            <p>
-              <span className="text-[#9F6A69] italic ">
+
+        {/* Slide 2 */}
+        <div
+          className="rounded-3xl absolute inset-0 opacity-0 z-10 bg-[#f1e6e3] px-6 py-8 transition-all duration-500
+          peer-checked/slider2:opacity-100 peer-checked/slider2:z-20"
+        >
+          <div className="flex flex-col md:flex-row gap-6 flex-wrap">
+            <div className="w-full md:w-1/3">
+              <h3 className="font-bold text-lg md:text-xl">
+                Programming Instructor (Be School)
+              </h3>
+              <p className="text-sm md:text-base text-[#9F6A69] italic">
                 October 2022 – April 2023
-              </span>
-            </p>
-          </div>
-          <div className="role w-[66%]">
-            <ul>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Taught programming fundamentals (Scratch, App Inventor, basic
-                hardware) to students aged 9–16 across 80+ workshops.
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Simplified technical concepts through interactive lessons,
-                adapting to diverse learning styles — building strong
-                communication and instructional design skills.
-              </li>
-            </ul>
+              </p>
+            </div>
+            <div className="w-full md:w-2/3">
+              <ul>
+                <li className="mb-2 flex text-sm md:text-base">
+                  <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                  Taught programming basics (Scratch, App Inventor, hardware) to
+                  80+ students aged 9–16.
+                </li>
+                <li className="mb-2 flex text-sm md:text-base">
+                  <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                  Created interactive lessons tailored to different learning
+                  styles.
+                </li>
+                <li className="mb-2 flex text-sm md:text-base">
+                  <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                  Guided students in building their first games, apps, and
+                  hardware-controlled projects.
+                </li>
+                <li className="mb-2 flex text-sm md:text-base">
+                  <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                  Fostered an engaging, curiosity-driven learning environment.
+                </li>
+                <li className="mb-2 flex text-sm md:text-base">
+                  <CheckCircleIcon className="w-5 h-5 text-[#9F6A69] mr-2 shrink-0" />
+                  Received consistently positive feedback for clarity, patience,
+                  and inspiration.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <hr className="my-10 shadow" />
-        <div className="exp3 flex flex-row mt-8">
-          <div className="head w-[33%]">
-            <h3 className="font-bold text-xl">Abstractor (Akhdar)</h3>
-            <p>
-              <span className="text-[#9F6A69] italic">
-                June 2022 – March 2025
-              </span>
-            </p>
-          </div>
-          <div className="role w-[66%]">
-            <ul>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Summarized over 25 books by condensing complex ideas into
-                engaging, concise formats (average 70% reduction), maintaining
-                key insights and clarity.
-              </li>
-              <li className="mb-2 flex flex-row">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 448 512"
-                  width="20px"
-                  height="20px"
-                  fill="#9F6A69"
-                  className="mr-2"
-                >
-                  <path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM337 209L209 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L303 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z" />
-                </svg>
-                Delivered high-quality content on a weekly basis with 100%
-                deadline adherence and editorial precision — sharpening
-                attention to detail, structure, and user understanding.
-              </li>
-            </ul>
-          </div>
+
+        {/* Indicators */}
+        <div className="absolute w-full flex justify-center gap-2 bottom-4 mt-4 z-30">
+          {["slider1", "slider2"].map((id, i) => (
+            <label
+              key={id}
+              htmlFor={id}
+              onClick={() => setActiveSlide(i + 1)}
+              className={`block w-4 h-4 rounded-full bg-white cursor-pointer opacity-50 transition-all duration-300 ease-in-out hover:scale-110 hover:opacity-100
+              peer-checked/${id}:opacity-100 peer-checked/${id}:w-8`}
+            ></label>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default WorkExperience
+export default WorkExperience;
