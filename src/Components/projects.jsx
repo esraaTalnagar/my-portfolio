@@ -150,7 +150,7 @@ const Projects = () => {
               </p>
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
-                  href="https://github.com/esraaTalnagar/Bakery"
+                  href="https://github.com/esraaTalnagar/BakeryWithReact"
                   className="text-grey-700 hover:text-[#9F6A69]"
                   target="_blank"
                 >
@@ -169,7 +169,7 @@ const Projects = () => {
                 </a>
 
                 <a
-                  href="https://esraatalnagar.github.io/Bakery/"
+                  href="https://esraatalnagar.github.io/BakeryWithReact/"
                   className="text-grey-700 hover:text-[#9F6A69]"
                   target="_blank"
                 >
