@@ -1,3 +1,20 @@
+const SkillsList = [
+  "HTML5",
+  "CSS3",
+  "JavaScript (ES6+)",
+  "React.js",
+  "TypeScript",
+  "Bootstrap",
+  "Tailwind CSS",
+  "sass",
+  "Pugjs",
+  "Webpack",
+  "NPM",
+  "Git",
+  "GitHub",
+  "VS Code",
+  "Chrome DevTools",
+];
 const AboutMe = () => {
   return (
     <section className="container mx-auto px-4 py-10">
@@ -30,15 +47,7 @@ const AboutMe = () => {
             My Skills
           </h3>
           <ul className="flex flex-wrap gap-2">
-            {[
-              "HTML5",
-              "CSS3",
-              "JavaScript (ES6+)",
-              "React",
-              "TypeScript",
-              "Bootstrap",
-              "Tailwind CSS",
-            ].map((skill, index) => (
+            {SkillsList.map((skill, index) => (
               <li
                 key={index}
                 className="border border-[#9F6A69] px-4 py-2 rounded hover:bg-[#9F6A69] hover:text-white transition-colors duration-200"
