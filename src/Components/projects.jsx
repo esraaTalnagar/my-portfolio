@@ -143,10 +143,10 @@ const Projects = () => {
                 </h5>
               </div>
               <p class="block font-sans text-base antialiased font-light leading-relaxed text-gray-700">
-                A modern, responsive web page designed using HTML, CSS, and
-                JavaScript. It showcases a bakery's products with an elegant
-                layout, smooth scrolling, and interactive sections to highlight
-                featured items, offers, and customer contact options.
+                A fully responsive 5-page website built with React and React Router, 
+                showcasing a modern bakery brand. Features smooth client-side navigation, 
+                reusable components, and mobile-first design. Optimized for performance and accessibility, 
+                achieving a perfect Lighthouse score in responsiveness.
               </p>
               <div className="inline-flex flex-wrap items-center gap-3 mt-8 group">
                 <a
